@@ -8,7 +8,7 @@ function Home(props) {
 
     <div className="container my-3 home" style={{position:'absolute', top:'12%'}}>
       <AddRecipe showAlert={props.showAlert}/>
-      <Recipe showAlert={props.showAlert} setProgress={props.setProgress}/>
+      <Recipe showAlert={props.showAlert} setProgress={props.setProgress} setLogin = {props.setLogin}/>
     </div>
   )
 }

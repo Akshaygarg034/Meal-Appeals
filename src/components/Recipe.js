@@ -11,6 +11,7 @@ function Recipe(props) {
 
     useEffect(() => {
         if (localStorage.getItem('token')) {
+            props.setLogin(true);
             props.setProgress(20);
             getRecipes();
             props.setProgress(100);

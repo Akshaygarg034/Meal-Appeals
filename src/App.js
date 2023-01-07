@@ -51,7 +51,7 @@ function App() {
             <div className="container">
               <Switch>
                 <Route exact path="/">
-                  <Home showAlert={showAlert} setProgress={setProgress} />
+                  <Home showAlert={showAlert} setProgress={setProgress} setLogin = {setLogin}/>
                 </Route>
                 <Route exact path="/recipe/:id">
                   <RecipeDetails setProgress={setProgress} />
