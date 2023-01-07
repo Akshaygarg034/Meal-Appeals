@@ -89,42 +89,51 @@ p {
 }
 
 .form-control {
-  box-shadow:inset 1px 1px 3px grey, 0.2px 0.2px 0px grey !important;
+  box-shadow: inset 1px 1px 3px grey, 0.2px 0.2px 0px grey !important;
   border: none !important;
 }
-.searchRecipes{
+
+.searchRecipes {
   padding-top: 8%;
 }
 
 
-@media only screen and (max-width: 500px){
-  .preloader{
+@media only screen and (max-width: 500px) {
+  .preloader {
     background-size: 112% !important;
   }
-  .login{
+
+  .login {
     padding-top: 23% !important;
   }
-  .signup{
+
+  .signup {
     padding-top: 23% !important;
   }
-  .searchRecipes{
+
+  .searchRecipes {
     padding-top: 24% !important;
   }
-  .home{
+
+  .home {
     left: 0;
   }
-  .recipeDetails{
+
+  .recipeDetails {
     padding-top: 20% !important;
   }
-  .recipeDetailImage{
+
+  .recipeDetailImage {
     width: 81%;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 767px){
-  .searchRecipes{
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .searchRecipes {
     padding-top: 18% !important;
   }
-  .recipeDetails{
+
+  .recipeDetails {
     padding-top: 18% !important;
   }
 }
