@@ -96,6 +96,9 @@ p {
 .searchRecipes {
   padding-top: 8%;
 }
+.hide{
+  visibility: hidden;
+}
 
 
 @media only screen and (max-width: 500px) {

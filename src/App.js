@@ -13,7 +13,8 @@ import LoadingBar from 'react-top-loading-bar'
 import Loader from './components/Loader';
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
+  const [login, setLogin] = useState(false);
   const [alert, changeAlert] = useState(null);
   const [progress, setProgress] = useState(0);
 
@@ -39,7 +40,7 @@ function App() {
       {loading ? <Loader /> :
         <RecipeState>
           <Router>
-            <Navbar />
+            <Navbar login = {login} setLogin = {setLogin}/>
             <LoadingBar
               height={2.8}
               color='#f11946'
@@ -59,7 +60,7 @@ function App() {
                   <SearchRecipes showAlert={showAlert} setProgress={setProgress} />
                 </Route>
                 <Route exact path="/login">
-                  <Login showAlert={showAlert} setProgress={setProgress} />
+                  <Login showAlert={showAlert} setProgress={setProgress} setLogin = {setLogin}/>
                 </Route>
                 <Route exact path="/signup" showAlert={showAlert}>
                   <Signup showAlert={showAlert} setProgress={setProgress} />
