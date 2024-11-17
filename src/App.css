@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background: url('./img/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+i {
+  cursor: pointer;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
+
+.about {
+  font-weight: 500;
+  transform: scale(1.8);
+}
+
+.steps {
+  margin-bottom: 8%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.recipeDetailImage {
+  width: 50%;
+  border-radius: 23px;
+  box-shadow: 1px 2px 13px grey;
+}
+
+.searchrecipeitem:hover {
+  transition: 0.45s;
+  transform: scale(1.03);
+}
+
+.recipeItem:hover {
+  transition: 0.45s;
+  transform: scale(1.05);
+}
+
+.card-image {
+  overflow: hidden;
+  height: 215px;
+}
+
+.active {
+  color: #dc3545 !important;
+}
+
+.alert {
+  height: 50px;
+  width: 84.9% !important;
+  margin: 17px 8.4%;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+  position: fixed;
+  top: 10.4%;
+  z-index: 10;
+}
+
+.form-control {
+  box-shadow: inset 1px 1px 3px grey, 0.2px 0.2px 0px grey !important;
+  border: none !important;
+}
+
+.searchRecipes {
+  padding-top: 8%;
+}
+.hide{
+  visibility: hidden;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .preloader {
+    background-size: 112% !important;
+  }
+
+  .login {
+    padding-top: 23% !important;
+  }
+
+  .signup {
+    padding-top: 23% !important;
+  }
+
+  .searchRecipes {
+    padding-top: 24% !important;
+  }
+
+  .home {
+    left: 0;
+  }
+
+  .recipeDetails {
+    padding-top: 20% !important;
+  }
+
+  .recipeDetailImage {
+    width: 81%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .searchRecipes {
+    padding-top: 18% !important;
+  }
+
+  .recipeDetails {
+    padding-top: 18% !important;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

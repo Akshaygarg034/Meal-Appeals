@@ -10,5 +10,5 @@ const connectToMongo = () => {
         console.log('connected to database');
     })
 }
-
+ 
 module.exports = connectToMongo

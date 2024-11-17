@@ -1,26 +1,45 @@
 {
-  "name": "main_backend",
-  "version": "1.0.0",
-  "description": "Akshay's Main Backend",
-  "main": "index.js",
-  "engines": {
-    "node":"14.x"
+  "name": "meal-appeals",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "concurrently": "^7.2.2",
+    "dotenv": "^16.0.2",
+    "env-cmd": "^10.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.3.3",
+    "react-scripts": "5.0.1",
+    "react-top-loading-bar": "^2.3.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "type": "module",
-    "start": "node index.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "both": "concurrently \"npm run start\" \"npx nodemon backend/index.js\""
   },
-  "author": "Akshay garg",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.2",
-    "express": "^4.18.1",
-    "express-validator": "^6.14.2",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.4.1",
-    "nodemon": "^2.0.18"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
