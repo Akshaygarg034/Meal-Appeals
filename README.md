@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Meal Appeals: A MERN-Based Food Recipes Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Meal Appeals is a feature-rich food recipes website that allows users to explore a wide variety of recipes, create their own, and securely save them to their personal accounts. With a modern design and robust functionality, Meal Appeals enhances the way users discover and manage their favorite dishes.
 
-## Available Scripts
+![Meal appeals Screenshot](https://res.cloudinary.com/dz1vsgxm5/image/upload/All%20projects%20Screenshots/bdb1egaivgfuc6eqymko)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+Meal Appeals is a MERN-stack application designed for food enthusiasts. It offers an interactive platform for users to explore diverse recipes, contribute their own, and securely store them for future use.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can view the live application at [https://akshay-meal-appeals.netlify.app](https://akshay-meal-appeals.netlify.app)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Fully Responsive Design**:  Optimized for seamless use across all devices, including desktops, tablets, and smartphones.
+- **User Authentication**:  Secure login and signup using JWT-based authentication. Passwords are securely hashed using Bcrypt.js.
+- **Explore Recipes**:  Browse through a variety of food recipes from different cuisines.
+- **Create and Manage Recipes**:  Add, edit, and organize your personalized recipes with ease, directly from your account.
+- **Interactive Animations**:  Engaging animations enhance the user experience, making the interface more dynamic and visually appealing.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: ReactJS, Bootstrap, CSS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Backend**: Node.js, Express.js.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Database**: MongoDB
 
-### `npm run eject`
+- **Authentication**: JSON Web Token (JWT), Bcrypt.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run this project locally, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Backend Setup
+1. Clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/Akshaygarg034/Meal-Appeals.git
+   ```
 
-## Learn More
+2. Navigate to the project directory:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd '.\Meal Appeals\backend'
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install the dependencies:
 
-### Code Splitting
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Add a .env file to the backend directory with the following variables:
 
-### Analyzing the Bundle Size
+    ```bash
+    DATABASE = your-mongodb-url
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Start the Backend server:
 
-### Making a Progressive Web App
+    ```bash
+    npm start
+    ```
+### Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Navigate to the frontend directory:
 
-### Advanced Configuration
+    ```bash
+    cd ..
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Install the dependencies:
 
-### Deployment
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. Add a .env file to the backend directory with the following variables:
 
-### `npm run build` fails to minify
+    ```bash
+    # Your backend link
+    REACT_APP_LINK = 'http://localhost:5000'
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Start the React app:
+
+    ```bash
+    npm start
+    ```
+
+5. Open your web browser and visit <http://localhost:3000/> to use the app locally.
+
+## Screenshots
+### Recipes Exploration Page
+
+![Recipe Exploration Screenshot](https://res.cloudinary.com/dz1vsgxm5/image/upload/All%20projects%20Screenshots/ihmzeilqkqunelvis5m8)
+
+### Login Page
+
+![Login Screenshot](https://res.cloudinary.com/dz1vsgxm5/image/upload/All%20projects%20Screenshots/rbv0wl7kcxo1cmbjpndx)
+
+### Signup Page
+
+![Signup Screenshot](https://res.cloudinary.com/dz1vsgxm5/image/upload/All%20projects%20Screenshots/fdhcws6bwporiiezcbxa)
+
+
+## Contact
+
+If you have any questions, feedback, or would like to get in touch with me, feel free to reach out to me:
+- **Email**: [gargakshay034@gmail.com](gargakshay034@gmail.com)
+- **Linkedin**: [https://www.linkedin.com/in/akshay-garg-360281213](https://www.linkedin.com/in/akshay-garg-360281213/)
